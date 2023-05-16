@@ -1,0 +1,63 @@
+GET http://localhost:3000/poke/search-name?name=
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/poke/search-id/212
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/poke/get_all?page=10
+Content-Type: application/json
+
+
+###
+PATCH  http://localhost:3000/poke/alterate/201
+Content-Type: application/json
+
+{
+    "field": "type_1",
+    "body": "dragon"
+}
+
+###
+POST  http://localhost:3000/poke/create
+Content-Type: application/json
+
+{
+    "name": "",
+    "pokedex_number": "",
+    "img_name": "",
+    "generation": "",
+    "evolution_stage": "",
+    "evolved": "",
+    "family_id": "",
+    "cross_gen": "",
+    "type_1": "",
+    "type_2": "",
+    "weather_1": "",
+    "weather_2": "",
+    "stat_total": "",
+    "atk": "",
+    "def": "",
+    "sta": "",
+    "legendary": "",
+    "aquireable": "",
+    "spawns": "",
+    "regional":"",
+    "raidable":"",
+    "hatchable":"",
+    "shiny":"",
+    "nest":"",
+    "new_poke":"",
+    "not_gettable":"",
+    "future_evolve":"",
+    "cp_40":"",
+    "cp_39":""
+}
+
+
+###
+DELETE  http://localhost:3000/poke/delete/
+Content-Type: application/json
